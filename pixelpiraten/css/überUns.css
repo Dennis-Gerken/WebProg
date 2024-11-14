@@ -105,6 +105,7 @@ h2 {
 .member {
   flex: 1 1 calc(33% - 20px); /* Flex-Grow und Flex-Basis */
   margin: 10px;
+  padding-bottom: 20px;
   background: #e7e7e7;
   border-radius: 5px;
   overflow: hidden;
@@ -112,14 +113,14 @@ h2 {
   text-align: center;
   display: flex;
   flex-direction: column;
-  height: 400px; /* Einheitliche Höhe für jedes Mitglied */
+  height: auto; /* Einheitliche Höhe für jedes Mitglied */
 }
 
 
 /* Einheitliche Größe für Bilder */
 .member img {
   width: 100%; /* Volle Breite des Containers */
-  height: 200px; /* Festgelegte Höhe für die Bilder */
+  height: 500px; /* Festgelegte Höhe für die Bilder */
   object-fit: cover; /* Bild wird skaliert und beschnitten, um den Container zu füllen */
   object-position: center;
   border-bottom: 2px solid #ddd; /* Trennlinie unter dem Bild */
@@ -135,20 +136,24 @@ h2 {
   text-align: center;
   display: flex;
   flex-direction: column;
-  height: 600px; /* Einheitliche Höhe für jedes Mitglied */
+  height: auto; /* Einheitliche Höhe für jedes Mitglied */
 }
 
 .member2 img {
-  width: 100%; /* Volle Breite des Containers */
-  height: 55%; /* Festgelegte Höhe für die Bilder */
-   /* Bild wird skaliert und beschnitten, um den Container zu füllen */
+  width: 500px; /* Volle Breite des Containers */
+  height: 400px; /* Festgelegte Höhe für die Bilder */
+  /* Bild wird skaliert und beschnitten, um den Container zu füllen */
   object-position: center;
-  border-bottom: 2px solid #ddd; /* Trennlinie unter dem Bild */
+  border-bottom: 2px solid #ddd;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+/* Trennlinie unter dem Bild */
 }
 
 .member-content2 {
   flex: 1; /* Erlaubt den Textbereich, den verbleibenden Platz einzunehmen */
-  padding: 0px;
+  padding: 15px;
   color: #333; /* Schwarze Schriftfarbe */
   display: flex;
   flex-direction: column;
