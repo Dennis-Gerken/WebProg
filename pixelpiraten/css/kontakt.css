@@ -68,18 +68,21 @@
   background-color: mediumblue;
   color: #f0f0f0;
 }
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
 }
+
 header {
   background: #35424a;
   color: white;
   padding: 30px 0;
   text-align: center;
 }
+
 .container {
   width: 80%;
   margin: auto;
@@ -89,16 +92,19 @@ header {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 form {
   display: flex;
   flex-direction: column;
 }
+
 input, textarea {
   margin-bottom: 10px;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
+
 input[type="submit"] {
   background: #35424a;
   color: white;
@@ -107,9 +113,11 @@ input[type="submit"] {
   transition: background 0.3s ease;
   font-size: 20px;
 }
+
 input[type="submit"]:hover {
   background: #4e5b62;
 }
+
 .map {
   margin-top: 20px;
   height: 400px;
