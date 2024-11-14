@@ -115,6 +115,7 @@ h2 {
   margin-bottom: 20px;
   max-height: 300px;
   overflow-y: scroll;
+  font-size: 20px;
 }
 
 .message {
@@ -125,6 +126,7 @@ h2 {
 .message:last-child {
   border-bottom: none;
 }
+
 
 input[type="text"], input[type="submit"] {
   padding: 10px;
