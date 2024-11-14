@@ -1,4 +1,6 @@
 /* Navigation mit Hintergrundbild */
+
+
 .navbar {
   width: 100%;
   margin: auto;
@@ -94,18 +96,36 @@ footer {
   color: white;
 }
 
-.boxCarousel {
-  padding-top: 50px;
-  padding-bottom: 90px;
-  height: 45em;
-  width: auto;
-  margin: auto;
+.carousel {
+  position: relative;
+  max-width: 70%;
+  height: 40%;
+  margin: 20px auto;
+  padding-left: 28%;/* Zentriert den Container */
 }
 
 .carousel img {
-  height: 30em;
-  width: 42em;
-  margin: auto;
-  border-radius: 25px;
-
+  width: 60%;
+  max-height: 37em;/* Volle Breite des Containers */
+  height: auto;
+  /* Proportionale Höhe */
+  display: none; /* Standardmäßig alle Bilder ausblenden */
+  border-radius: 25px; /* Runden der Ecken */
 }
+
+
+@media (max-width: 768px) {
+  .boxCarousel {
+    max-width: 100%; /* Maximale Breite auf 100% setzen für mobile Ansicht */
+    margin-right: auto; /* Zentriert den Container */
+     /* Etwas Padding, falls nötig */
+  }
+
+  .carousel img {
+    width: 100%; /* Bilder auf 100% der Containerbreite setzen */
+    height: auto; /* Höhe bleibt automatisch im richtigen Verhältnis */
+    display: block; /* Alle Bilder werden sichtbar */
+  }
+}
+
+
