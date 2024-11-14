@@ -403,6 +403,10 @@
   margin-right: 10px;
 }
 
+.news-card a {
+  text-decoration: none;
+}
+
 .news-card img {
   width: 100%; /* Passt das Bild an die Breite des Karten-Containers an */
   height: 200px; /* Festgelegte Höhe für die Bilder */
