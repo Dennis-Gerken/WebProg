@@ -100,20 +100,25 @@ h2 {
   display: flex;
   justify-content: space-between;
 }
+
 input[type="text"] {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
   width: 70%;
+  height: 50px;
+  font-size: 20px;
 }
 input[type="submit"] {
-  padding: 10px;
+  padding: 10px 50px ;
   background: #35424a;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s ease;
+  font-size: 20px;
+
 }
 input[type="submit"]:hover {
   background: #4e5b62;
