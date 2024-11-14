@@ -85,3 +85,18 @@ footer {
   background: #35424a;
   color: white;
 }
+.boxCarousel {
+  padding-top: 50px;
+  padding-bottom: 90px;
+  height: 45em;
+  width: auto;
+  margin: auto;
+ }
+
+.carousel img {
+  height: 30em;
+  width: 42em;
+  margin: auto;
+  border-radius: 25px;
+
+}
