@@ -5,6 +5,14 @@
   <title>Registrieren | FC PixelPiraten</title>
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/footer.css"/>
+  <script>
+    function saveRegistrationData() {
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      sessionStorage.setItem('email', email);
+      sessionStorage.setItem('password', password);
+    }
+  </script>
 </head>
 <body>
 <div class="banner">
@@ -12,9 +20,9 @@
     <h1>Registrieren</h1>
     <p>Schließe dich dem FC Pixel Piraten an und werde Mitglied unserer Community!</p>
 
-    <!-- Registrierungsformular im Banner -->
+
     <div class="form-container banner-form">
-      <form action="#" method="post">
+      <form action="#" method="post" onsubmit="saveRegistrationData()">
         <label for="email">E-Mail:</label>
         <input type="email" id="email" name="email" required>
         <label for="password">Passwort:</label>
@@ -22,7 +30,7 @@
         <button type="submit">Registrieren</button>
       </form>
 
-      <!-- Button zurück zur Startseite -->
+
       <div class="back-to-home">
         <button onclick="window.location.href='../pages/index.html'">Zurück zur Startseite</button>
       </div>
@@ -30,67 +38,13 @@
   </div>
 </div>
 
-<!-- Begrüßungstext unterhalb des Banners -->
+
 <div class="greeting-text">
   <p>Arrr! Du suchst eine Herausforderung und möchtest Teil der PixelPirat*innen sein? Dann registriere dich jetzt und steche mit uns auf See!</p>
 </div>
 
 <footer class="footer">
-  <div class="footer-content">
-    <!-- Anfahrt -->
-    <div class="footer-section">
-      <h3>Anfahrt</h3>
-      <p>Erzbergerstraße 121</p>
-      <p>76133 Karlsruhe</p>
-      <iframe width="250" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas"
-              src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Erzbergerstra%C3%9Fe%20121%20%20Karlsruhe+(DHBW%20Karlsruhe)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-      <a href='http://hauckautoren.ch/'>Hauckautoren.ch</a>
-      <script type='text/javascript'
-              src='https://embedmaps.com/google-maps-authorization/script.js?id=3ab813aca601c6029efdfb8ad20a25bbbc1e4534'></script>
-    </div>
 
-    <!-- Rechtliches -->
-    <div class="footer-section">
-      <h3>Rechtliches</h3>
-      <ul>
-        <li><a href="../pages/index.html">Home</a></li>
-        <li><a href="../pages/impressum.html">Impressum</a></li>
-        <li><a href="../pages/datenschutz.html">Datenschutz</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-section">
-      <h3>Soziale Medien</h3>
-      <ul>
-        <li><a href="https://www.youtube.com/">YouTube</a></li>
-        <li><a href="https://www.facebook.com/">Facebook</a></li>
-        <li><a href="https://www.instagram.com/">Instagram</a></li>
-      </ul>
-    </div>
-
-    <!-- Kontakt -->
-    <div class="footer-section">
-      <h3>Kontakt</h3>
-      <p>FC Pixel Piraten</p>
-      <p>Erzbergerstraße 121</p>
-      <p>76133 Karlsruhe</p>
-      <br>
-      <p><strong>Telefon:</strong> 0721 97355</p>
-      <p><strong>Email:</strong> FCPixelPiraten@Verein.de</p>
-      <p><strong>Website:</strong> FC-Pixel-Piraten.de</p>
-    </div>
-  </div>
-
-  <!-- Logo und Social Media -->
-  <div class="footer-logo">
-    <img src="../img/Logo.png" alt="Verein Logo">
-  </div>
-
-  <!-- Copyright -->
-  <div class="footer-bottom">
-    <p>&copy; 2024 FC Pixel Piraten</p>
-  </div>
 </footer>
-
 </body>
 </html>
