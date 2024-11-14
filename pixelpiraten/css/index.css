@@ -365,6 +365,10 @@
   color: #f0f0f0;
 }
 
+.gallery-Button a {
+  color: white;
+}
+
 .news-titel h1 {
   font-size: 50px;
   text-align: center;
