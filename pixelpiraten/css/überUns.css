@@ -12,37 +12,44 @@
   padding: 22px 0;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/img.png"); /* Bild und Overlay */
-  background-size: cover; /* Bild vollständig abdecken */
-  background-position: center; /* Bild zentrieren */
+  justify-content: space-between; /* Bild links, Navigation zentriert */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/img.png");
+  background-size: cover;
+  background-position: center;
   color: #fff;
 }
 
-.navbar img {
+.navbar-left img {
   height: 140px;
-  margin-left: 30px;
-  margin-right: 100px;
   width: auto;
   cursor: pointer;
+  margin-left: 30px; /* Optional: Abstand zum linken Rand */
 }
 
-.navbar ul li {
+.navbar-middle {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.navbar-middle ul {
+  display: inline-flex;
   list-style: none;
-  display: inline-block;
-  margin: 0 20px 8px;
-  position: relative;
 }
 
-.navbar ul li a {
-  font-size: large;
+.navbar-middle ul li {
+  position: relative;
+  margin: 0 20px;
+}
+
+.navbar-middle ul li a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  font-size: large;
 }
 
-.navbar ul li::after {
+/* Hover-Effekt für die Links */
+.navbar-middle ul li::after {
   content: '';
   height: 3px;
   width: 0;
@@ -50,10 +57,10 @@
   position: absolute;
   left: 0;
   bottom: -6px;
-  transition: 0.5s;
+  transition: width 0.5s;
 }
 
-.navbar ul li:hover::after {
+.navbar-middle ul li:hover::after {
   width: 100%;
 }
 
