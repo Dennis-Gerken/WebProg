@@ -11,6 +11,7 @@
   background-size: cover;
   background-position: center;
 
+
 }
 
 .navbar {
@@ -20,6 +21,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 
 .banner img {
@@ -29,6 +31,7 @@
   width: auto;
   cursor: pointer;
 }
+
 
 .navbar ul li {
   list-style: none;
@@ -81,6 +84,7 @@
   line-height: 25px;
 }
 
+
 .navbar-right button {
   background-color: dodgerblue;
   border: none;
@@ -106,6 +110,53 @@
 .navbar-right button:active {
   background-color: mediumblue; /* Dunklere Farbe beim Klick */
   color: #f0f0f0;
+}
+
+
+@media (max-width: 768px) {
+  /* Navigation wird vertikal ausgerichtet */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5px;
+  }
+
+  .navbar img {
+    padding-left: 5px;
+  }
+
+  .navbar ul li a{
+    padding-left: 15px;
+  }
+
+  /* Motto zentrieren und sicherstellen, dass es nicht von den Buttons überlappt wird */
+  .motto {
+    margin-top: 200px;
+  }
+
+  /* Navbar-Rechts-Buttons nach unten verschieben und zentrieren */
+  .navbar-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    /* Abstand zum Hauptteil der Navigation */
+  }
+
+  /* Anpassung der Button-Größe und Margin für Mobilgeräte */
+  .navbar-right button {
+    width: 80%; /* Breite anpassen für besseren Look auf Mobilgeräten */
+    margin: 5px 0; /* Gleichmäßiger Abstand zwischen den Buttons */
+  }
+
+  /* Optional: Textgröße anpassen */
+  .motto h1 {
+    font-size: 36px;
+  }
+
+  .navbar ul li a {
+    font-size: 18px;
+  }
 }
 
 
@@ -526,6 +577,37 @@
   display: none;
 }
 
+@media (max-width: 768px) {
+  .newsletter-popup {
+    bottom: 80px; /* Popup höher positionieren */
+    width: 80%; /* Breite anpassen, um mehr Platz zu nutzen */
+    right: 5%; /* Zentriert auf der Seite für mobile Geräte */
+    padding: 15px; /* Kleinere Innenabstände für mobile Geräte */
+  }
+
+  .newsletter-popup h3 {
+    font-size: 16px; /* Kleinere Schriftgröße für mobile Geräte */
+  }
+
+  .newsletter-popup p {
+    font-size: 13px; /* Textgröße für bessere Lesbarkeit anpassen */
+  }
+
+  .newsletter-popup input[type="email"] {
+    font-size: 13px; /* Kleinere Schriftgröße im Eingabefeld */
+  }
+
+  .subscribe-btn {
+    font-size: 14px; /* Kleinere Schriftgröße für den Button */
+  }
+
+  .close-btn {
+    top: 5px; /* Button oben etwas enger platzieren */
+    right: 5px;
+    font-size: 16px;
+  }
+}
+
 .form-container {
   width: 100%;
   max-width: 500px;
@@ -605,8 +687,7 @@
   background-color: dodgerblue;
   border: none;
   color: white;
-  padding: 10px;
-  padding-right: 10px;
+  padding: 10px 10px;
   margin-top: 20px;
   font-size: 1.1em;
   border-radius: 5px;
