@@ -1,0 +1,672 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("../img/img.png");
+  background-size: cover;
+  background-position: center;
+
+}
+
+.navbar {
+  width: 95%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner img {
+  height: 140px;
+  margin-left: 30px;
+  margin-right: 100px;
+  width: auto;
+  cursor: pointer;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px 8px;
+  position: relative;
+}
+
+.navbar ul li a {
+  font-size: large;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: dodgerblue;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.motto {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+.motto h1 {
+  font-size: 50px;
+  margin-top: 40px;
+}
+
+.motto p {
+  margin: 25px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
+
+.navbar-right button {
+  background-color: dodgerblue;
+  border: none;
+  color: aliceblue;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 8px;
+  margin-right: 5px;
+}
+
+.navbar-right button:hover {
+  background-color: #75b3f0; /* Etwas hellere Farbe beim Hover */
+  box-shadow: 1px 1px 10px rgba(57, 52, 255); /* Leichtes Aufleuchten */
+}
+
+.navbar-right button:active {
+  background-color: mediumblue; /* Dunklere Farbe beim Klick */
+  color: #f0f0f0;
+}
+
+
+/* Styling für die Boxen */
+.information-text {
+  background-color: #f1f1f1;
+  padding-top: 120px;
+  text-align: center;
+  font-size: 2em;
+  text-decoration: underline black;
+  text-underline-offset: 15px;
+}
+
+.information {
+  padding-top: 50px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.information img {
+  padding-top: 30px;
+  height: 70px;
+  width: auto;
+}
+
+.box1 {
+  max-width: 1200px;
+  width: 400px;
+  height: 500px;
+  margin-top: 10px;
+  margin-right: 100px;
+  margin-bottom: 8em;
+  opacity: 0; /* Startet transparent */
+  transform: translateX(-100%); /* Startet links außerhalb des Bildschirms */
+  animation: slideIn 1s ease forwards;
+  justify-content: center;
+}
+
+.counter-box {
+  margin-top: 250px;
+  max-width: 1200px;
+  width: 100px;
+  height:350px;
+}
+
+.box1 img {
+  width: 400px;
+  height: 500px;
+  border-radius: 8px;
+}
+
+.box1:nth-child(1) {
+  animation-delay: 1.5s;
+}
+/* Verzögerung für die Animation */
+
+.counter-box:nth-child(2) {
+  animation-delay: 1.5s;
+}
+.counter-container:nth-child(3) {
+  animation-delay: 1.5s;
+}
+.counter-container:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+/* Keyframes für die Einfluganimation */
+@keyframes slideIn {
+  to {
+    opacity: 1; /* Vollständig sichtbar */
+    transform: translateX(0); /* An der Zielposition */
+  }
+}
+
+.information h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+
+.counter-container {
+  display: flex;
+  gap: 20px; /* Abstand zwischen den Boxen */
+  padding-top: -200px;
+}
+
+/* Einzelne Box */
+.counter-box {
+  width: 150px;
+  text-align: center;
+  background-color: white;
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 120px;
+}
+
+.counter-box p {
+  color: #1c1c1c;
+  font-family: Tahoma, serif;
+}
+/* Header Bereich */
+.counter-box .header {
+  padding: 20px;
+  font-size: 18px;
+}
+
+/* Kreis mit der Zahl */
+.counter-box .circle {
+  background-color: #009fe3;
+  color: white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin: 0 auto;
+}
+
+/* Button für "Mehr" */
+.counter-container .button button {
+  background-color: #009fe3;
+  color: white;
+  border: none;
+  margin-top: 42px;
+  padding: 15px 55px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  font-size: 15px;
+  border-radius: 0 0 8px 8px ;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.counter-container .button button:hover {
+  background-color: #75b3f0; /* Etwas hellere Farbe beim Hover */
+  box-shadow: 1px 1px 10px rgba(57, 52, 255); /* Leichtes Aufleuchten */
+}
+
+.counter-container .button button:active {
+  background-color: mediumblue; /* Dunklere Farbe beim Klick */
+  color: #f0f0f0;
+}
+
+
+.fade {
+  padding-bottom: -20px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), #f1f1f1); /* Farbverlauf von dunkel zu transparent */
+}
+
+.fadeReversed {
+  padding-bottom: 20px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.1));
+}
+
+.team-gallery {
+  text-align: center;
+  max-width: 100%;
+  margin: 40px auto 80px;
+  padding: 40px;
+
+
+}
+
+.team-gallery h2 {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  font-size: 3em;
+  margin-bottom: 10px;
+  text-decoration: underline black;
+  text-underline-offset: 15px;
+}
+
+.highlight {
+  color: #007bff; /* Blaue Farbe für "Teams" */
+}
+
+.team-gallery p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Galerie-Stil */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 70px;
+  margin-top: 50px;
+}
+
+.gallery-item {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  margin-left: 20px;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item a {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.gallery-item a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.gallery-Button button {
+  background-color: dodgerblue;
+  border: none;
+  color: aliceblue;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  font-size: 22px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.gallery-Button button:hover {
+  background-color: #75b3f0; /* Etwas hellere Farbe beim Hover */
+  box-shadow: 1px 1px 10px rgba(57, 52, 255); /* Leichtes Aufleuchten */
+}
+
+.gallery-Button button:active {
+  background-color: mediumblue; /* Dunklere Farbe beim Klick */
+  color: #f0f0f0;
+}
+
+.news-titel h1 {
+  font-size: 50px;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 10px 0 10px 0;
+  text-decoration: underline black;
+  text-underline-offset: 15px;
+}
+.news-all {
+  margin-top: 80px;
+}
+
+.news-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 Spalten */
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+/* Stil für einzelne News-Karten */
+.news-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  margin-top: 30px;
+  margin-right: 10px;
+}
+
+.news-card img {
+  width: 100%; /* Passt das Bild an die Breite des Karten-Containers an */
+  height: 200px; /* Festgelegte Höhe für die Bilder */
+  object-fit: cover; /* Zuschneiden des Bildes, sodass es den Container vollständig füllt */
+  border-radius: 8px; /* Optional: Rundungen hinzufügen */
+}
+
+/* Inhalt in der News-Karte */
+.news-card-content {
+  padding: 15px;
+}
+
+/* Titel der News */
+.news-card h3 {
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+}
+
+/* Beschreibungstext der News */
+.news-card p {
+  color: #666;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* Hover-Effekt für News-Karten */
+.news-card:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+  .news-section {
+    grid-template-columns: repeat(2, 1fr); /* 2 Spalten auf mittleren Bildschirmen */
+  }
+}
+
+@media (max-width: 480px) {
+  .news-section {
+    grid-template-columns: 1fr; /* 1 Spalte auf kleinen Bildschirmen */
+  }
+}
+
+
+
+.newsletter-popup {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 300px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+/* Close-Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Überschrift */
+.newsletter-popup h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}
+
+/* Beschreibungstext */
+.newsletter-popup p {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+
+/* Input-Feld */
+.newsletter-popup input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Abonnieren-Button */
+.subscribe-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Popup ausblenden */
+.hidden {
+  display: none;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  font-size: 1em;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.form-container input[type="email"],
+.form-container input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.form-container button {
+  background-color: dodgerblue;
+  border: none;
+  color: white;
+  padding: 10px 0;
+  margin-top: 20px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #75b3f0;
+}
+
+/* Stil für das Formular im Banner */
+.banner-form {
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.banner-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-form label {
+  font-size: 1em;
+  margin-top: 10px;
+  color: #333;
+}
+
+.banner-form input[type="email"],
+.banner-form input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 1em;
+}
+
+.banner-form button {
+  background-color: dodgerblue;
+  border: none;
+  color: white;
+  padding: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.banner-form button:hover {
+  background-color: #75b3f0;
+}
+
+/* Stil für den Begrüßungstext unterhalb des Banners */
+.greeting-text {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 1.6em;
+  color: #333;
+  max-width: 800px;
+  margin: 40px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-Button a {
+  text-decoration: none;
+}
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .navbar ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .navbar-right button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .motto h1 {
+    font-size: 1.8em;
+  }
+
+  .motto p {
+    font-size: 1em;
+  }
+
+  .information {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .counter-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-gallery h2,
+  .news-titel h1 {
+    font-size: 1.8em;
+  }
+
+  .gallery-item {
+    width: 100%;
+    height: 180px;
+  }
+
+  .news-section {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}

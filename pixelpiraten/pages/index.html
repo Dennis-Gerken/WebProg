@@ -1,0 +1,233 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Startseite | FC PixelPiraten</title>
+  <link rel="shortcut icon" type="png" href="../img/Logo.png">
+  <link rel="stylesheet" type="text/css" href="../css/index.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/footer.css"/>
+  <script src="../js/index.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+<div class="banner">
+  <div class="navbar">
+    <a href="../pages/index.html">
+    <img src="../img/Logo.png" alt="FC Pixel Piraten Logo">
+    </a>
+    <div class="navbar-middle">
+      <ul>
+        <li><a href="../pages/termine.html">Termine</a></li>
+        <li><a href="../pages/community.html">Community</a></li>
+        <li><a href="../pages/bilder.html">Bilder</a></li>
+        <li><a href="../pages/überUns.html">über uns</a></li>
+        <li><a href=../pages/kontakt.html>Kontakt</a></li>
+      </ul>
+    </div>
+    <div class="navbar-right">
+      <button type="button">Anmelden</button>
+      <button type="button">Registrieren</button>
+    </div>
+  </div>
+</div>
+
+<div class="fade"><br></div>
+
+<div class="motto">
+  <h1>Tradition leben, Zukunft gestalten!</h1>
+  <p>Mit der Kraft unserer Tradition und dem Mut zur Innovation formen wir gemeinsam die Zukunft unseres Vereins – für
+    unvergessliche Momente und große Erfolge.</p>
+</div>
+
+
+<div class="newsletter-popup" id="newsletterPopup">
+  <button class="close-btn" onclick="closePopup()">×</button>
+  <h3>Abonniere unseren Newsletter</h3>
+  <p>Erhalte die neuesten Updates direkt in deinem Posteingang!</p>
+  <input type="email" placeholder="Deine E-Mail-Adresse" />
+  <button class="subscribe-btn" onclick="closePopup()">Abonnieren</button>
+</div>
+
+
+<div class="information-text"><h2>Unser <span class="highlight">Verein</span></h2></div>
+<div class="information">
+  <div class="box1"><img src="../img/space.avif" alt="Fußballfeld"></div>
+    <div class="counter-container">
+      <div class="counter-box">
+        <img src="../img/calendar.png">
+        <div class="header"><p>Gründung</p></div><br>
+        <div class="circle" data-target="1919">2020</div>
+        <div class="button"><button id="mehrGruendung" type="button">MEHR</button></div>
+      </div>
+      <div class="counter-box">
+        <img src="../img/teams.png">        <div class="header"><p>Teams</p></div><br>
+        <div class="circle" data-target="15">4</div>
+        <div class="button"><button id="mehrTeams" type="button">MEHR</button></div>
+      </div>
+      <div class="counter-box">
+        <img src="../img/members.png">
+        <div class="header"><p>Mitglieder</p></div><br>
+        <div class="circle" data-target="652">75</div>
+        <div class="button"><button id="mehrMitglieder" type="button">MEHR</button></div>
+      </div>
+      <div class="counter-box">
+        <img src="../img/sponsoren.png">
+        <div class="header"><p>Sponsoren</p></div><br>
+        <div class="circle" data-target="204">1</div>
+        <div class="button"><button id="mehrSponsoren" type="button">MEHR</button></div>
+      </div>
+    </div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+</div>
+
+
+<section class="team-gallery">
+  <h2>Unsere <span class="highlight">Teams</span></h2>
+  <p>
+    Die Fußballer*innen des FC Pixel Piraten aus Karlsruhe sind wie eine große Familie. Wir sehen uns als
+    Breitensportverein, der offen ist für alle.
+  </p>
+
+  <div class="gallery">
+    <div class="gallery-item" style="background-image: url('../img/male.jpg');">
+      <a href="#herren">Herren</a>
+    </div>
+    <div class="gallery-item" style="background-image: url('../img/female.jpg');">
+      <a href="#damen">Damen</a>
+    </div>
+    <div class="gallery-item" style="background-image: url('../img/young.jpg');">
+      <a href="#jugend">Jugend</a>
+    </div>
+    <div class="gallery-item" style="background-image: url('../img/oldMan.jpg');">
+      <a href="#alte-herren">Alte Herren</a>
+    </div>
+  </div>
+  <div class="gallery-Button">
+    <button type="button"> <a href="../pages/kontakt.html"> Werde jetzt Mitglied!</a> </button>
+
+  </div>
+</section>
+
+<div class="fadeReversed"><br></div>
+<div class="news-all">
+  <div class="news-titel"><h1> Neuigkeiten im Verein</h1></div>
+
+  <div class="news-section">
+    <!-- News Karte 1 -->
+    <div class="news-card">
+      <a href="../pages/news1.html" target="Mehr">
+      <img src="../img/rotekarte.jpg" alt="News Bild 1">
+      <div class="news-card-content">
+        <h3>Özdek holt sich Gelb-Rote Karte ab</h3>
+        <p>Unschöne Szenen beim Dorfderby</p>
+      </div>
+      </a>
+    </div>
+
+    <!-- News Karte 2 -->
+    <div class="news-card">
+      <img src="../img/kinder.jpg" alt="News Bild 2">
+      <div class="news-card-content">
+        <h3>Unsere Kids gewinnen zu Hause 4:2 gegen Karlsruhe</h3>
+        <p>Felix Groß schießt den FC mit 4 treffern an die Tabellenspitze</p>
+      </div>
+    </div>
+
+    <!-- News Karte 3 -->
+    <div class="news-card">
+      <img src="../img/rückenschmerzen.jpg" alt="News Bild 3">
+      <div class="news-card-content">
+        <h3>Dennis Gerken muss verletzt vom Platz</h3>
+        <p>Beim Spiel der ersten Mannschaft hat Gerken einen Hexenschuss bekommen</p>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <img src="../img/1.liga.jpg" alt="News Bild 1">
+      <div class="news-card-content">
+        <h3>Die Erste Manschafft möchte wieder in die Landesliga</h3>
+        <p>Nach einer zuletzt schwachen Saison ist das neue Ziel klar. Aufstieg!</p>
+      </div>
+    </div>
+
+    <!-- News Karte 2 -->
+    <div class="news-card">
+      <img src="../img/platzwart.jpg" alt="News Bild 2">
+      <div class="news-card-content">
+        <h3>Platzwart gesucht!</h3>
+        <p>Nachdem Herbert in den Ruhestand gegangen ist suchen wir auf freiwilliger Basis einen neuen Platzwart</p>
+      </div>
+    </div>
+
+    <!-- News Karte 3 -->
+    <div class="news-card">
+      <img src="../img/technikprofi.jpg" alt="News Bild 3">
+      <div class="news-card-content">
+        <h3>Technikprobleme</h3>
+        <p>Die technischen Probleme sind nun gelöst worden. Danke dabei an die Wirtschaftsinformatiker aus unserem Verein</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <!-- Anfahrt -->
+    <div class="footer-section">
+      <h3>Anfahrt</h3>
+      <p>Erzbergerstraße 121</p>
+      <p>76133 Karlsruhe</p>
+      <iframe width="250" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas"
+              src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Erzbergerstra%C3%9Fe%20121%20%20Karlsruhe+(DHBW%20Karlsruhe)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+      <a href='http://hauckautoren.ch/'>Hauckautoren.ch</a>
+      <script type='text/javascript'
+              src='https://embedmaps.com/google-maps-authorization/script.js?id=3ab813aca601c6029efdfb8ad20a25bbbc1e4534'></script>
+    </div>
+
+    <!-- Rechtliches -->
+    <div class="footer-section">
+      <h3>Rechtliches</h3>
+      <ul>
+        <li><a href="../pages/index.html">Home</a></li>
+        <li><a href="../pages/impressum.html">Impressum</a></li>
+        <li><a href="../pages/datenschutz.html">Datenschutz</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Soziale Medien</h3>
+      <ul>
+        <li><a href="https://www.youtube.com/">YouTube</a></li>
+        <li><a href="https://www.facebook.com/">Facebook</a></li>
+        <li><a href="https://www.instagram.com/">Instagram</a></li>
+      </ul>
+    </div>
+
+    <!-- Kontakt -->
+    <div class="footer-section">
+      <h3>Kontakt</h3>
+      <p>FC Pixel Piraten</p>
+      <p>Erzbergerstraße 121</p>
+      <p>76133 Karlsruhe</p>
+      <br>
+      <p><strong>Telefon:</strong> 0721 97355</p>
+      <p><strong>Email:</strong> FCPixelPiraten@Verein.de</p>
+      <p><strong>Website:</strong> FC-Pixel-Piraten.de</p>
+    </div>
+  </div>
+
+  <!-- Logo und Social Media -->
+  <div class="footer-logo">
+    <img src="../img/Logo.png" alt="Verein Logo">
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-bottom">
+    <p>&copy; 2024 FC Pixel Piraten</p>
+  </div>
+</footer>
+</body>
+</html>
+

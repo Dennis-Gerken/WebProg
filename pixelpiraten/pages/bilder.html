@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="png" href="../img/Logo.png">
+  <link rel="stylesheet" type="text/css" href="../css/bilder.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/footer.css"/>
+  <title>Title</title>
+</head>
+<body>
+<div class="navbar">
+  <a href="../pages/index.html">
+  <img src="../img/Logo.png" alt="FC Pixel Piraten Logo">
+  </a>
+  <div class="navbar-middle">
+    <ul>
+      <li><a href="../pages/index.html">Startseite</a></li>
+      <li><a href="../pages/community.html">Community</a></li>
+      <li><a href="../pages/termine.html">Termine</a></li>
+      <li><a href="../pages/überUns.html">Über Uns</a></li>
+      <li><a href="../pages/kontakt.html">Kontakt</a></li>
+    </ul>
+  </div>
+</div>
+<header>
+  <h1>Galerie</h1>
+</header>
+
+<div class="carousel">
+  <img src="../img/gallery/img.png" class="active" alt="Bild 1">
+  <img src="../img/gallery/img_1.png" alt="Bild 2">
+  <img src="../img/gallery/img_2.png" alt="Bild 3">
+</div>
+
+<script>
+  let currentIndex = 0;
+  const images = document.querySelectorAll('.carousel img');
+
+  function showNextImage() {
+    images[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % images.length;
+    images[currentIndex].classList.add('active');
+  }
+
+  setInterval(showNextImage, 3000); // Wechsel alle 3 Sekunden
+</script>
+
+<footer class="footer">
+  <div class="footer-content">
+    <!-- Anfahrt -->
+    <div class="footer-section">
+      <h3>Anfahrt</h3>
+      <p>Erzbergerstraße 121</p>
+      <p>76133 Karlsruhe</p>
+      <iframe width="250" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas"
+              src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Erzbergerstra%C3%9Fe%20121%20%20Karlsruhe+(DHBW%20Karlsruhe)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+      <a href='http://hauckautoren.ch/'>Hauckautoren.ch</a>
+      <script type='text/javascript'
+              src='https://embedmaps.com/google-maps-authorization/script.js?id=3ab813aca601c6029efdfb8ad20a25bbbc1e4534'></script>
+    </div>
+
+    <!-- Rechtliches -->
+    <div class="footer-section">
+      <h3>Rechtliches</h3>
+      <ul>
+        <li><a href="../pages/index.html">Home</a></li>
+        <li><a href="../pages/impressum.html">Impressum</a></li>
+        <li><a href="../pages/datenschutz.html">Datenschutz</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Soziale Medien</h3>
+      <ul>
+        <li><a href="https://www.youtube.com/">YouTube</a></li>
+        <li><a href="https://www.facebook.com/">Facebook</a></li>
+        <li><a href="https://www.instagram.com/">Instagram</a></li>
+      </ul>
+    </div>
+
+    <!-- Kontakt -->
+    <div class="footer-section">
+      <h3>Kontakt</h3>
+      <p>FC Pixel Piraten</p>
+      <p>Erzbergerstraße 121</p>
+      <p>76133 Karlsruhe</p>
+      <br>
+      <p><strong>Telefon:</strong> 0721 97355</p>
+      <p><strong>Email:</strong> FCPixelPiraten@Verein.de</p>
+      <p><strong>Website:</strong> FC-Pixel-Piraten.de</p>
+    </div>
+  </div>
+
+  <!-- Logo und Social Media -->
+  <div class="footer-logo">
+    <img src="../img/Logo.png" alt="Verein Logo">
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-bottom">
+    <p>&copy; 2024 FC Pixel Piraten</p>
+  </div>
+</footer>
+</body>
+</html>

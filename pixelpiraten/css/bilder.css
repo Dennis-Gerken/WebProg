@@ -1,0 +1,87 @@
+/* Navigation mit Hintergrundbild */
+.navbar {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/img.png"); /* Bild und Overlay */
+  background-size: cover; /* Bild vollständig abdecken */
+  background-position: center; /* Bild zentrieren */
+  color: #fff;
+}
+
+.navbar img {
+  height: 140px;
+  margin-left: 30px;
+  margin-right: 100px;
+  width: auto;
+  cursor: pointer;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  font-size: large;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: dodgerblue; /* Weißer Unterstrich beim Hover */
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: #35424a;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.carousel {
+  position: relative;
+  max-width: 50%; /* Setze die maximale Breite auf 50% */
+  margin: 20px auto; /* zentrieren */
+}
+
+.carousel img {
+  width: 100%; /* Volle Breite des Containers */
+  height: auto; /* Auto Höhe für proportionale Darstellung */
+  display: none; /* Alle Bilder standardmäßig ausblenden */
+}
+
+.carousel img.active {
+  display: block; /* Aktives Bild anzeigen */
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #35424a;
+  color: white;
+}

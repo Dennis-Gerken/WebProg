@@ -1,0 +1,97 @@
+/* Allgemeines Layout */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+h1 {
+    text-align: center;
+    color: #0056b3;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+/* Impressum Inhalt */
+main.impressum {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main.impressum h2 {
+    color: #0056b3;
+    font-size: 1.5em;
+    margin-top: 1.2em;
+}
+
+main.impressum p {
+    margin-bottom: 1em;
+    color: #555;
+}
+
+strong {
+    color: #333;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #222;
+    color: #ddd;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.footer-section p,
+.footer-section a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-section a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-logo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.footer-logo img {
+    max-width: 150px;
+}
+
+.footer-bottom {
+    color: #888;
+    font-size: 0.8em;
+    margin-top: 20px;
+}

@@ -1,0 +1,126 @@
+/* Navigation mit Hintergrundbild */
+.navbar {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/img.png"); /* Bild und Overlay */
+  background-size: cover; /* Bild vollständig abdecken */
+  background-position: center; /* Bild zentrieren */
+  color: #fff;
+}
+
+.navbar img {
+  height: 140px;
+  margin-left: 30px;
+  margin-right: 100px;
+  width: auto;
+  cursor: pointer;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  font-size: large;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: dodgerblue;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.navbar-right button {
+  background-color: rgba(255, 255, 255, 0.8); /* Halbtransparente weiße Buttons */
+  color: dodgerblue;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-right: 5px;
+}
+
+.navbar-right button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 1px 1px 10px rgba(57, 52, 255, 0.3);
+}
+
+.navbar-right button:active {
+  background-color: lightblue;
+  color: dodgerblue;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+header {
+  background: #35424a;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  color: #35424a;
+}
+.search {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 70%;
+}
+input[type="submit"] {
+  padding: 10px;
+  background: #35424a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+input[type="submit"]:hover {
+  background: #4e5b62;
+}
+.event {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}

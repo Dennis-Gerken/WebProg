@@ -1,0 +1,116 @@
+/* Allgemeines Styling */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Navigation */
+.navbar {
+  width: 100%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/img.png"); /* Bild und Overlay */
+  background-size: cover; /* Bild vollständig abdecken */
+  background-position: center; /* Bild zentrieren */
+  color: #fff;
+}
+
+.navbar img {
+  height: 140px;
+  margin-left: 30px;
+  margin-right: 100px;
+  width: auto;
+  cursor: pointer;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px 8px;
+  position: relative;
+}
+
+.navbar ul li a {
+  font-size: large;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: dodgerblue;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+
+
+.navbar-right button:hover {
+  background-color: #75b3f0;
+  box-shadow: 1px 1px 10px rgba(57, 52, 255, 0.3);
+}
+
+.navbar-right button:active {
+  background-color: mediumblue;
+  color: #f0f0f0;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+header {
+  background: #35424a;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+input, textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+input[type="submit"] {
+  background: #35424a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+input[type="submit"]:hover {
+  background: #4e5b62;
+}
+.map {
+  margin-top: 20px;
+  height: 400px;
+  border: none;
+}

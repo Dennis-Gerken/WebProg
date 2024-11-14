@@ -1,0 +1,131 @@
+/* Allgemeines Styling */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Navigation */
+.navbar {
+  width: 100%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/img.png"); /* Bild und Overlay */
+  background-size: cover; /* Bild vollständig abdecken */
+  background-position: center; /* Bild zentrieren */
+  color: #fff;
+}
+
+.navbar img {
+  height: 140px;
+  margin-left: 30px;
+  margin-right: 100px;
+  width: auto;
+  cursor: pointer;
+}
+
+.navbar-middle ul {
+  display: flex;
+  margin: 0;
+}
+
+.navbar-middle ul li {
+  list-style: none;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar-middle ul li a {
+  font-size: large;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.navbar-middle ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: dodgerblue;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+.navbar-middle ul li:hover::after {
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: #35424a;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.news-content {
+  width: 80%;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  overflow: hidden;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #35424a;
+}
+
+/* Reduziert das Bild auf 10% der ursprünglichen Größe */
+img[src='../img/rotekarte.jpg'] {
+  width: 40%; /* Setzt die Breite des Bildes auf 10% */
+  height: auto; /* Höhe wird automatisch angepasst, um das Seitenverhältnis beizubehalten */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #35424a;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+.footer-section {
+  width: 22%;
+}
+
+.footer-logo img {
+  width: 100px;
+  margin-top: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}

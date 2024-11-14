@@ -1,0 +1,186 @@
+/* Allgemeines Styling */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Navigation */
+.navbar {
+  width: 100%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/img.png"); /* Bild und Overlay */
+  background-size: cover; /* Bild vollständig abdecken */
+  background-position: center; /* Bild zentrieren */
+  color: #fff;
+}
+
+.navbar img {
+  height: 140px;
+  margin-left: 30px;
+  margin-right: 100px;
+  width: auto;
+  cursor: pointer;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px 8px;
+  position: relative;
+}
+
+.navbar ul li a {
+  font-size: large;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: dodgerblue;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+
+
+.navbar-right button:hover {
+  background-color: #75b3f0;
+  box-shadow: 1px 1px 10px rgba(57, 52, 255, 0.3);
+}
+
+.navbar-right button:active {
+  background-color: mediumblue;
+  color: #f0f0f0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+header {
+  background: #35424a;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  color: #35424a;
+}
+/* Container für den Vorstand */
+.board {
+  display: flex;
+  flex-wrap: wrap; /* Erlaubt das Umbrechen der Boxen */
+  justify-content: space-between; /* Gleiche Abstände zwischen den Boxen */
+}
+
+/* Gleichmäßige Größe für jedes Mitglied */
+.member {
+  flex: 1 1 calc(33% - 20px); /* Flex-Grow und Flex-Basis */
+  margin: 10px;
+  background: #e7e7e7;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 400px; /* Einheitliche Höhe für jedes Mitglied */
+}
+
+
+/* Einheitliche Größe für Bilder */
+.member img {
+  width: 100%; /* Volle Breite des Containers */
+  height: 200px; /* Festgelegte Höhe für die Bilder */
+  object-fit: cover; /* Bild wird skaliert und beschnitten, um den Container zu füllen */
+  object-position: center;
+  border-bottom: 2px solid #ddd; /* Trennlinie unter dem Bild */
+}
+
+.member2 {
+  flex: 1 1 calc(33% - 20px); /* Flex-Grow und Flex-Basis */
+  margin: 10px;
+  background: #e7e7e7;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 600px; /* Einheitliche Höhe für jedes Mitglied */
+}
+
+.member2 img {
+  width: 100%; /* Volle Breite des Containers */
+  height: 55%; /* Festgelegte Höhe für die Bilder */
+   /* Bild wird skaliert und beschnitten, um den Container zu füllen */
+  object-position: center;
+  border-bottom: 2px solid #ddd; /* Trennlinie unter dem Bild */
+}
+
+.member-content2 {
+  flex: 1; /* Erlaubt den Textbereich, den verbleibenden Platz einzunehmen */
+  padding: 0px;
+  color: #333; /* Schwarze Schriftfarbe */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Zentriert den Text vertikal */
+}
+
+/* Textbereich mit einheitlicher Größe */
+.member-content {
+  flex: 1; /* Erlaubt den Textbereich, den verbleibenden Platz einzunehmen */
+  padding: 15px;
+  color: #333; /* Schwarze Schriftfarbe */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Zentriert den Text vertikal */
+}
+
+.member-content h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.member-content p {
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #35424a;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
