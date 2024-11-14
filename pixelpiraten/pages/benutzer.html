@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Willkommen | FC PixelPiraten</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <script>
+    function loadUserData() {
+      const email = sessionStorage.getItem('email');
+      if (email) {
+        document.getElementById('user-email').textContent = email;
+      } else {
+        window.location.href = 'anmelden.html';
+      }
+    }
+  </script>
+</head>
+<body onload="loadUserData()">
+<div class="user-container">
+  <h1>Willkommen an Bord, <span id="user-email"></span>!</h1>
+  <p>Schön, dass du wieder da bist! Hier findest du deine persönlichen Informationen und Einstellungen.</p>
+
+
+  <div class="user-actions">
+    <button onclick="window.location.href='einstellungen.html'">Einstellungen</button>
+    <button onclick="logout()">Abmelden</button>
+  </div>
+</div>
+
+<script>
+  function logout() {
+    sessionStorage.clear();
+    window.location.href = 'anmelden.html';
+  }
+</script>
+</body>
+</html>

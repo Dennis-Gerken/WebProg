@@ -4,20 +4,12 @@
   <meta charset="UTF-8">
   <title>Anmelden | FC PixelPiraten</title>
   <link rel="stylesheet" href="../css/index.css">
-  <link rel="stylesheet" href="../css/footer.css"/>
   <script>
-    function loadLoginData() {
-      const savedEmail = sessionStorage.getItem('email');
-      const savedPassword = sessionStorage.getItem('password');
-      if (savedEmail) {
-        document.getElementById('email').value = savedEmail;
-      }
-      if (savedPassword) {
-        document.getElementById('password').value = savedPassword;
-      }
+    function saveLoginDataAndRedirect() {
+      const email = document.getElementById('email').value;
+      sessionStorage.setItem('email', email);
+      window.location.href = 'benutzer.html';
     }
-
-    window.onload = loadLoginData;
   </script>
 </head>
 <body>
@@ -26,15 +18,16 @@
     <h1>Anmelden</h1>
     <p>Ahoi Matrose! Bitte melde dich an, um wieder an Deck zu sein.</p>
 
-    <!-- Anmeldeformular im Banner -->
+
     <div class="form-container banner-form">
-      <form action="#" method="post">
+      <form action="javascript:saveLoginDataAndRedirect()" method="post">
         <label for="email">E-Mail:</label>
         <input type="email" id="email" name="email" required>
         <label for="password">Passwort:</label>
         <input type="password" id="password" name="password" required>
         <button type="submit">Anmelden</button>
       </form>
+
 
       <div class="back-to-home">
         <button onclick="window.location.href='../pages/index.html'">Zurück zur Startseite</button>
