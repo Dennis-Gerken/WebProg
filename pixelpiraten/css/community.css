@@ -77,12 +77,14 @@ body {
   padding: 0;
   background-color: #f4f4f4;
 }
+
 header {
   background: #35424a;
   color: white;
   padding: 10px 0;
   text-align: center;
 }
+
 .container {
   width: 80%;
   margin: auto;
@@ -92,30 +94,38 @@ header {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 h2 {
   color: #35424a;
 }
+
 .messages {
   border: 1px solid #ddd;
   border-radius: 5px;
-  padding: 10px;
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-bottom: 20px;
   max-height: 300px;
   overflow-y: scroll;
-  margin-bottom: 20px;
 }
+
 .message {
   border-bottom: 1px solid #eee;
-  padding: 5px 0;
+  padding: 5px 0 15px;
 }
+
 .message:last-child {
   border-bottom: none;
 }
+
 input[type="text"], input[type="submit"] {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
   margin-bottom: 10px;
+  font-size: 20px;
 }
+
 input[type="submit"] {
   background: #35424a;
   color: white;
@@ -123,6 +133,7 @@ input[type="submit"] {
   cursor: pointer;
   transition: background 0.3s ease;
 }
+
 input[type="submit"]:hover {
   background: #4e5b62;
 }
