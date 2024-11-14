@@ -12,7 +12,7 @@
   padding: 22px 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/img.png"); /* Bild und Overlay */
   background-size: cover; /* Bild vollständig abdecken */
   background-position: center; /* Bild zentrieren */
