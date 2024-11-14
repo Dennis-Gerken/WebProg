@@ -25,13 +25,14 @@
 .banner img {
   height: 140px;
   margin-left: 30px;
-  margin-right: 100px;
+  margin-right: 50px;
   width: auto;
   cursor: pointer;
 }
 
 .navbar ul li {
   list-style: none;
+  padding-bottom: 5px;
   display: inline-block;
   margin: 0 20px 8px;
   position: relative;
