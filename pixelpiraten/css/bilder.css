@@ -1,5 +1,17 @@
 /* Navigation mit Hintergrundbild */
+@media (max-width: 768px) {
+  .boxCarousel {
+    max-width: 100%; /* Maximale Breite auf 100% setzen für mobile Ansicht */
+    margin-right: auto; /* Zentriert den Container */
+    /* Etwas Padding, falls nötig */
+  }
 
+  .carousel img {
+    width: 100%; /* Bilder auf 100% der Containerbreite setzen */
+    height: auto; /* Höhe bleibt automatisch im richtigen Verhältnis */
+    display: block; /* Alle Bilder werden sichtbar */
+  }
+}
 
 .navbar {
   width: 100%;
@@ -114,16 +126,4 @@ footer {
 }
 
 
-@media (max-width: 768px) {
-  .boxCarousel {
-    max-width: 100%; /* Maximale Breite auf 100% setzen für mobile Ansicht */
-    margin-right: auto; /* Zentriert den Container */
-    /* Etwas Padding, falls nötig */
-  }
 
-  .carousel img {
-    width: 100%; /* Bilder auf 100% der Containerbreite setzen */
-    height: auto; /* Höhe bleibt automatisch im richtigen Verhältnis */
-    display: block; /* Alle Bilder werden sichtbar */
-  }
-}
