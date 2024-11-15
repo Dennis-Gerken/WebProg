@@ -1,63 +1,4 @@
-/* Navigation mit Hintergrundbild */
 
-
-.navbar {
-  width: 100%;
-  margin: auto;
-  padding: 22px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Bild links, Navigation zentriert */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/img.png");
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-}
-
-.navbar-left img {
-  height: 140px;
-  width: auto;
-  cursor: pointer;
-  margin-left: 30px; /* Optional: Abstand zum linken Rand */
-}
-
-.navbar-middle {
-  flex-grow: 1;
-  text-align: center;
-}
-
-.navbar-middle ul {
-  display: inline-flex;
-  list-style: none;
-}
-
-.navbar-middle ul li {
-  position: relative;
-  margin: 0 20px;
-}
-
-.navbar-middle ul li a {
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  font-size: large;
-}
-
-/* Hover-Effekt für die Links */
-.navbar-middle ul li::after {
-  content: '';
-  height: 3px;
-  width: 0;
-  background: dodgerblue;
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  transition: width 0.5s;
-}
-
-.navbar-middle ul li:hover::after {
-  width: 100%;
-}
 
 body {
   font-family: Arial, sans-serif;
@@ -96,36 +37,18 @@ footer {
   color: white;
 }
 
-.carousel {
-  position: relative;
-  max-width: 70%;
-  height: 40%;
-  margin: 20px auto;
-  padding-left: 28%;/* Zentriert den Container */
+.boxCarousel {
+  padding-top: 50px;
+  padding-bottom: 90px;
+  height: 45em;
+  width: auto;
+  margin: auto;
 }
 
 .carousel img {
-  width: 60%;
-  max-height: 37em;/* Volle Breite des Containers */
-  height: auto;
-  /* Proportionale Höhe */
-  display: none; /* Standardmäßig alle Bilder ausblenden */
-  border-radius: 25px; /* Runden der Ecken */
+  height: 30em;
+  width: 42em;
+  margin: auto;
+  border-radius: 25px;
+
 }
-
-
-@media (max-width: 768px) {
-  .boxCarousel {
-    max-width: 100%; /* Maximale Breite auf 100% setzen für mobile Ansicht */
-    margin-right: auto; /* Zentriert den Container */
-     /* Etwas Padding, falls nötig */
-  }
-
-  .carousel img {
-    width: 100%; /* Bilder auf 100% der Containerbreite setzen */
-    height: auto; /* Höhe bleibt automatisch im richtigen Verhältnis */
-    display: block; /* Alle Bilder werden sichtbar */
-  }
-}
-
-

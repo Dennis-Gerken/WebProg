@@ -6,60 +6,7 @@
 }
 
 /* Navigation */
-.navbar {
-  width: 100%;
-  margin: auto;
-  padding: 35px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/img.png"); /* Bild und Overlay */
-  background-size: cover; /* Bild vollständig abdecken */
-  background-position: center; /* Bild zentrieren */
-  color: #fff;
-}
 
-.navbar img {
-  height: 140px;
-  margin-left: 30px;
-  margin-right: 100px;
-  width: auto;
-  cursor: pointer;
-}
-
-.navbar-middle ul {
-  display: flex;
-  margin: 0;
-}
-
-.navbar-middle ul li {
-  list-style: none;
-  margin: 0 20px;
-  position: relative;
-}
-
-.navbar-middle ul li a {
-  font-size: large;
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-.navbar-middle ul li::after {
-  content: '';
-  height: 3px;
-  width: 0;
-  background: dodgerblue;
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  transition: 0.5s;
-}
-
-.navbar-middle ul li:hover::after {
-  width: 100%;
-}
 
 body {
   font-family: Arial, sans-serif;
