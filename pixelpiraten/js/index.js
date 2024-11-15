@@ -1,19 +1,3 @@
-<script src="../js/index.js" defer></script>
-function saveLoginDataAndRedirect(event) {
-  event.preventDefault();
-  const email = document.getElementById('email').value;
-  sessionStorage.setItem('email', email);
-  window.location.href = 'benutzer.html';
-}
-
-// Event-Listener für das Login-Formular
-document.addEventListener("DOMContentLoaded", function () {
-  const loginForm = document.getElementById("loginForm");
-  if (loginForm) {
-    loginForm.addEventListener("submit", saveLoginDataAndRedirect);
-  }
-});
-
 const counters = document.querySelectorAll('.circle');
 
 counters.forEach(counter => {
@@ -66,16 +50,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const registrierenButton = document.querySelector(".navbar-right button:nth-child(2)");
 
   // Weiterleiten zu den neuen Seiten
-  if (anmeldenButton){
   anmeldenButton.addEventListener("click", function () {
     window.location.href = "../pages/anmelden.html";
   });
-  }
-  if (registrierenButton){
+
   registrierenButton.addEventListener("click", function () {
     window.location.href = "../pages/registrieren.html";
   });
-  }
   // "MEHR"-Buttons für Gründung, Teams, Mitglieder und Sponsoren
   document.getElementById("mehrGruendung").addEventListener("click", function () {
     window.location.href = "../pages/überUns.html";
