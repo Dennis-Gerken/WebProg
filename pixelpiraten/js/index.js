@@ -5,11 +5,30 @@ function saveLoginDataAndRedirect(event) {
   window.location.href = 'benutzer.html';
 }
 
+
 // Event-Listener für das Login-Formular
 document.addEventListener("DOMContentLoaded", function () {
   const loginForm = document.getElementById("loginForm");
   if (loginForm) {
     loginForm.addEventListener("submit", saveLoginDataAndRedirect);
+  }
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const email = sessionStorage.getItem('email');
+  const loginBtn = document.getElementById("login-btn");
+  const registerBtn = document.getElementById("register-btn");
+  const profileSection = document.getElementById("profile-section");
+
+  if (email) {
+    // Wenn ein Benutzer angemeldet ist, zeige das Profil-Icon
+    loginBtn.style.display = "none";
+    registerBtn.style.display = "none";
+    profileSection.style.display = "block";
+  } else {
+    // Wenn niemand angemeldet ist, zeige Anmelden/Registrieren-Buttons
+    loginBtn.style.display = "block";
+    registerBtn.style.display = "block";
+    profileSection.style.display = "none";
   }
 });
 

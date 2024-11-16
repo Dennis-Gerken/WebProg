@@ -139,14 +139,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 15px;
+    gap:  15px;
     /* Abstand zum Hauptteil der Navigation */
   }
 
   /* Anpassung der Button-Größe und Margin für Mobilgeräte */
   .navbar-right button {
     width: 80%; /* Breite anpassen für besseren Look auf Mobilgeräten */
-    margin: 5px 0; /* Gleichmäßiger Abstand zwischen den Buttons */
+    margin:  5px 0; /* Gleichmäßiger Abstand zwischen den Buttons */
   }
 
   /* Optional: Textgröße anpassen */
@@ -721,7 +721,8 @@
 @media (max-width: 768px) {
   .navbar ul li {
     display: block;
-    margin: 10px 0;
+    margin: 20px 0;
+
   }
 
   .navbar-right button {
@@ -765,4 +766,10 @@
     flex-direction: column;
     align-items: center;
   }
+}
+.navbar-right img {
+  width: auto;
+  height: 80px;
+  padding-bottom: 30px;
+  margin-top: 20px;
 }

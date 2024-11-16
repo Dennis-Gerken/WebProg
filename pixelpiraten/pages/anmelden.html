@@ -5,6 +5,19 @@
   <title>Anmelden | FC PixelPiraten</title>
   <link rel="stylesheet" href="../css/index.css">
   <script src="../js/index.js" defer></script>
+  <script>
+    function saveLoginDataAndRedirect(event) {
+      event.preventDefault(); // Verhindert das Standardformular-Verhalten
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      // Hier könnten Sie später eine Passwortprüfung hinzufügen, falls benötigt
+
+      sessionStorage.setItem('email', email);
+      sessionStorage.setItem('loggedIn', 'true');
+      window.location.href = '../pages/index.html'; // Weiterleitung zur Startseite
+    }
+  </script>
 </head>
 <body>
 <div class="banner">
@@ -12,9 +25,8 @@
     <h1>Anmelden</h1>
     <p>Ahoi Matrose! Bitte melde dich an, um wieder an Deck zu sein.</p>
 
-
     <div class="form-container banner-form">
-      <form action="javascript:saveLoginDataAndRedirect()" method="post">
+      <form action="javascript:void(0)" method="post" onsubmit="saveLoginDataAndRedirect(event)">
         <label for="email">E-Mail:</label>
         <input type="email" id="email" name="email" required>
         <label for="password">Passwort:</label>

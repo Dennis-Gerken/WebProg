@@ -13,6 +13,10 @@
         window.location.href = 'anmelden.html';
       }
     }
+    function logout() {
+      sessionStorage.clear();
+      window.location.href = 'anmelden.html';
+    }
   </script>
 </head>
 <body onload="loadUserData()">

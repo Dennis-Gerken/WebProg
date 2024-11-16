@@ -6,11 +6,13 @@
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/footer.css"/>
   <script>
-    function saveRegistrationData() {
+    function saveRegistrationData(event) {
+      event.preventDefault(); // Verhindert das normale Absenden des Formulars
       const email = document.getElementById('email').value;
       const password = document.getElementById('password').value;
       sessionStorage.setItem('email', email);
       sessionStorage.setItem('password', password);
+      window.location.href = "../pages/benutzer.html"; // Weiterleitung zur Benutzerseite
     }
   </script>
 </head>
@@ -22,7 +24,7 @@
 
 
     <div class="form-container banner-form">
-      <form action="#" method="post" onsubmit="saveRegistrationData()">
+      <form action="javascript:saveRegistrationData(event)" method="post">
         <label for="email">E-Mail:</label>
         <input type="email" id="email" name="email" required>
         <label for="password">Passwort:</label>
