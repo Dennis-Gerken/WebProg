@@ -684,6 +684,7 @@
 }
 
 .banner-form button {
+  width: 100%;
   background-color: dodgerblue;
   border: none;
   color: white;
@@ -772,4 +773,37 @@
   height: 80px;
   padding-bottom: 30px;
   margin-top: 20px;
+}
+.navbar-right {
+  display: flex; /* Aktiviert Flexbox /
+  gap: 10px; / Abstand zwischen den Buttons /
+  align-items: center; / Vertikale Ausrichtung der Buttons /
+}
+
+.navbar-right button {
+  background-color: dodgerblue;
+  border: none;
+  color: aliceblue;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin: 0; / Entfernt den Margin, damit die Buttons direkt nebeneinander sind */
+}
+
+.navbar-right button:hover {
+  background-color: #75b3f0;
+  box-shadow: 1px 1px 10px rgba(57, 52, 255);
+}
+
+.navbar-right button:active {
+  background-color: mediumblue;
+  color: #f0f0f0;
+}
+.form-container a {
+  text-decoration: none;
 }

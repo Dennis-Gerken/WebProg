@@ -3,19 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>Anmelden | FC PixelPiraten</title>
+  <link rel="shortcut icon" type="png" href="../img/Logo.png">
   <link rel="stylesheet" href="../css/index.css">
-  <script src="../js/index.js" defer></script>
   <script>
     function saveLoginDataAndRedirect(event) {
       event.preventDefault(); // Verhindert das Standardformular-Verhalten
       const email = document.getElementById('email').value;
       const password = document.getElementById('password').value;
+      const storedEmail = sessionStorage.getItem('email');
+      const storedPassword = sessionStorage.getItem('password');
+      const errorMessage = document.getElementById('login-error');
 
-      // Hier könnten Sie später eine Passwortprüfung hinzufügen, falls benötigt
-
-      sessionStorage.setItem('email', email);
-      sessionStorage.setItem('loggedIn', 'true');
-      window.location.href = '../pages/index.html'; // Weiterleitung zur Startseite
+      // Prüfung der Anmeldedaten
+      if (email === storedEmail && password === storedPassword) {
+        sessionStorage.setItem('loggedIn', 'true');
+        window.location.href = '../pages/index.html'; // Weiterleitung zur Startseite
+      } else {
+        errorMessage.textContent = "E-Mail oder Passwort ist falsch.";
+        errorMessage.style.color = "red";
+        errorMessage.style.fontWeight = "bold";
+      }
     }
   </script>
 </head>
@@ -26,14 +33,18 @@
     <p>Ahoi Matrose! Bitte melde dich an, um wieder an Deck zu sein.</p>
 
     <div class="form-container banner-form">
-      <form action="javascript:void(0)" method="post" onsubmit="saveLoginDataAndRedirect(event)">
+      <form action="#" method="post" onsubmit="saveLoginDataAndRedirect(event)">
         <label for="email">E-Mail:</label>
         <input type="email" id="email" name="email" required>
+
         <label for="password">Passwort:</label>
         <input type="password" id="password" name="password" required>
+
+        <!-- Fehlermeldung bei falscher Eingabe -->
+        <p id="login-error"></p>
+
         <button type="submit">Anmelden</button>
       </form>
-
 
       <div class="back-to-home">
         <button onclick="window.location.href='../pages/index.html'">Zurück zur Startseite</button>
@@ -41,7 +52,6 @@
     </div>
   </div>
 </div>
-
 
 <div class="greeting-text">
   <p>Liebe*r PixelPirat*in, ahoi, arrr. Wir stechen jederzeit auf See und besiegen jeden Gegner, auch online! Wir wünschen dir ein angenehmes Surfen :)</p>
@@ -52,3 +62,4 @@
 </footer>
 </body>
 </html>
+
