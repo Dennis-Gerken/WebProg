@@ -14,7 +14,7 @@
       const storedPassword = sessionStorage.getItem('password');
       const errorMessage = document.getElementById('login-error');
 
-      // Prüfung der Anmeldedaten
+      // Anmeldedaten sollen überprüft werden
       if (email === storedEmail && password === storedPassword) {
         sessionStorage.setItem('loggedIn', 'true');
         window.location.href = '../pages/index.html'; // Weiterleitung zur Startseite
@@ -40,7 +40,7 @@
         <label for="password">Passwort:</label>
         <input type="password" id="password" name="password" required>
 
-        <!-- Fehlermeldung bei falscher Eingabe -->
+
         <p id="login-error"></p>
 
         <button type="submit">Anmelden</button>

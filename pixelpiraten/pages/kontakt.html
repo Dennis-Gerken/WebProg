@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="shortcut icon" type="png" href="../img/Logo.png">
-  <link rel="stylesheet" type="text/css" href="../css/kontakt.css"/>
-  <link rel="stylesheet" type="text/css" href="../css/footer.css"/>
-  <link rel="stylesheet" type="text/css" href="../css/navbar.css"/>
+  <link href="../img/Logo.png" rel="shortcut icon" type="png">
+  <link href="../css/kontakt.css" rel="stylesheet" type="text/css"/>
+  <link href="../css/footer.css" rel="stylesheet" type="text/css"/>
+  <link href="../css/navbar.css" rel="stylesheet" type="text/css"/>
   <title>Title</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
 <nav class="navbar">
   <div class="navbar-left">
     <a href="../pages/index.html">
-      <img src="../img/Logo.png" alt="FC Pixel Piraten Logo">
+      <img alt="FC Pixel Piraten Logo" src="../img/Logo.png">
     </a>
   </div>
   <div class="navbar-middle">
@@ -36,13 +36,13 @@
   <br>
   <form action="#" method="post">
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
+    <input id="name" name="name" required type="text">
 
     <label for="email">E-Mail:</label>
-    <input type="email" id="email" name="email" required>
+    <input id="email" name="email" required type="email">
 
     <label for="message">Nachricht:</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
+    <textarea id="message" name="message" required rows="5"></textarea>
 
     <input type="submit" value="Absenden">
   </form>
@@ -57,9 +57,9 @@
         <li><p>Erzbergerstraße 121</p></li>
         <li><p>76133 Karlsruhe</p></li>
       </ul>
-      <iframe style="border:1px #FFFFFF none"
-              src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Erzbergerstra%C3%9Fe%20121%20%20Karlsruhe+(DHBW%20Karlsruhe)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              title="iframe" width="250px" height="150px" scrolling="no" frameborder="no" allow="fullscreen"></iframe>
+      <iframe allow="fullscreen"
+              frameborder="no"
+              height="150px" scrolling="no" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Erzbergerstra%C3%9Fe%20121%20%20Karlsruhe+(DHBW%20Karlsruhe)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" style="border:1px #FFFFFF none" title="iframe" width="250px"></iframe>
 
     </div>
 
@@ -99,7 +99,7 @@
 
   <!-- Logo und Social Media -->
   <div class="footer-logo">
-    <img src="../img/Logo.png" alt="Verein Logo">
+    <img alt="Verein Logo" src="../img/Logo.png">
   </div>
 
   <!-- Copyright -->

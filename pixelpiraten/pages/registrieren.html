@@ -24,27 +24,27 @@
     }
 
     function saveRegistrationData(event) {
-      event.preventDefault(); // Verhindert das normale Absenden des Formulars
+      event.preventDefault();
 
       const email = document.getElementById('email').value;
       const password = document.getElementById('password').value;
       const confirmPassword = document.getElementById('confirm-password').value;
       const errorMessage = document.getElementById('error-message');
 
-      // Überprüfen, ob das Passwort den Anforderungen entspricht
+
       const validationMessage = validatePasswordRequirements(password);
       if (validationMessage) {
         errorMessage.textContent = validationMessage;
         return;
       }
 
-      // Überprüfen, ob die Passwörter übereinstimmen
+
       if (password !== confirmPassword) {
         errorMessage.textContent = "Die Passwörter stimmen nicht überein.";
         return;
       }
 
-      // Wenn alles gültig ist, Daten speichern und weiterleiten
+
       sessionStorage.setItem('email', email);
       sessionStorage.setItem('password', password);
       errorMessage.textContent = ""; // Fehlernachricht zurücksetzen
@@ -69,7 +69,7 @@
         <label for="confirm-password">Passwort bestätigen:</label>
         <input type="password" id="confirm-password" name="confirm-password" required>
 
-        <!-- Fehlermeldungen -->
+
         <p id="error-message" style="color: red; font-weight: bold;"></p>
 
         <button type="submit">Registrieren</button>
