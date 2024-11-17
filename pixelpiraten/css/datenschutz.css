@@ -1,4 +1,4 @@
-/* Grundstruktur */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -20,7 +20,7 @@ header h1 {
   font-weight: normal;
 }
 
-/* Main-Bereich */
+
 main {
   max-width: 800px;
   margin: 40px auto;
@@ -44,7 +44,7 @@ main {
   padding-bottom: 5px;
 }
 
-/* Footer */
+
 footer {
   text-align: center;
   padding: 20px 0;
