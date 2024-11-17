@@ -5,20 +5,88 @@
   font-family: sans-serif;
 }
 
-/* Navigation */
-
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+
+  .navbar {
+    width: 100%;
+    margin: auto;
+    padding: 22px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Bild links, Navigation zentriert */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/img.png");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }
+
+  .navbar-left img {
+    height: 140px;
+    width: auto;
+    cursor: pointer;
+    margin-left: 30px; /* Optional: Abstand zum linken Rand */
+  }
+
+  .navbar-middle {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .navbar-middle ul {
+    display: inline-flex;
+    list-style: none;
+  }
+
+  .navbar-middle ul li {
+    position: relative;
+    margin: 0 20px;
+  }
+
+  .navbar-middle ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: large;
+  }
+
+  /* Hover-Effekt für die Links */
+  .navbar-middle ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: dodgerblue;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.5s;
+  }
+
+  .navbar-middle ul li:hover::after {
+    width: 100%;
+  }
+
+
+  .navbar-right button:hover {
+    background-color: #75b3f0;
+    box-shadow: 1px 1px 10px rgba(57, 52, 255, 0.3);
+  }
+
+  .navbar-right button:active {
+    background-color: mediumblue;
+    color: #f0f0f0;
+  }
+
+
 }
 
 header {
   background: #35424a;
   color: white;
-  padding: 10px 0;
+  padding: 30px 0;
   text-align: center;
 }
 

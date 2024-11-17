@@ -1,4 +1,3 @@
-/* Allgemeines Styling */
 * {
   margin: 0;
   padding: 0;
@@ -28,19 +27,20 @@ body {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 h2 {
   color: #35424a;
 }
-/* Container für den Vorstand */
+
+/* Container Vorstand */
 .board {
   display: flex;
-  flex-wrap: wrap; /* Erlaubt das Umbrechen der Boxen */
-  justify-content: space-between; /* Gleiche Abstände zwischen den Boxen */
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-/* Gleichmäßige Größe für jedes Mitglied */
 .member {
-  flex: 1 1 calc(33% - 20px); /* Flex-Grow und Flex-Basis */
+  flex: 1 1 calc(33% - 20px);
   margin: 10px;
   padding-bottom: 20px;
   background: #e7e7e7;
@@ -50,21 +50,19 @@ h2 {
   text-align: center;
   display: flex;
   flex-direction: column;
-  height: auto; /* Einheitliche Höhe für jedes Mitglied */
+  height: auto;
 }
 
-
-/* Einheitliche Größe für Bilder */
 .member img {
-  width: 100%; /* Volle Breite des Containers */
-  height: 500px; /* Festgelegte Höhe für die Bilder */
-  object-fit: cover; /* Bild wird skaliert und beschnitten, um den Container zu füllen */
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
   object-position: center;
-  border-bottom: 2px solid #ddd; /* Trennlinie unter dem Bild */
+  border-bottom: 2px solid #ddd;
 }
 
 .member2 {
-  flex: 1 1 calc(33% - 20px); /* Flex-Grow und Flex-Basis */
+  flex: 1 1 calc(33% - 20px);
   margin: 10px;
   background: #e7e7e7;
   border-radius: 5px;
@@ -73,38 +71,35 @@ h2 {
   text-align: center;
   display: flex;
   flex-direction: column;
-  height: auto; /* Einheitliche Höhe für jedes Mitglied */
+  height: auto;
 }
 
 .member2 img {
-  width: 500px; /* Volle Breite des Containers */
-  height: 400px; /* Festgelegte Höhe für die Bilder */
-  /* Bild wird skaliert und beschnitten, um den Container zu füllen */
+  width: 500px;
+  height: 400px;
   object-position: center;
   border-bottom: 2px solid #ddd;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-/* Trennlinie unter dem Bild */
 }
 
 .member-content2 {
-  flex: 1; /* Erlaubt den Textbereich, den verbleibenden Platz einzunehmen */
+  flex: 1;
   padding: 15px;
-  color: #333; /* Schwarze Schriftfarbe */
+  color: #333;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Zentriert den Text vertikal */
+  justify-content: center;
 }
 
-/* Textbereich mit einheitlicher Größe */
 .member-content {
-  flex: 1; /* Erlaubt den Textbereich, den verbleibenden Platz einzunehmen */
+  flex: 1;
   padding: 15px;
-  color: #333; /* Schwarze Schriftfarbe */
+  color: #333;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Zentriert den Text vertikal */
+  justify-content: center;
 }
 
 .member-content h3 {
@@ -116,6 +111,3 @@ h2 {
   font-size: 0.9em;
   margin: 5px 0;
 }
-
-
-
