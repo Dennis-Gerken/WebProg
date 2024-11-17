@@ -127,6 +127,7 @@
   .navbar ul li a{
     padding-left: 15px;
   }
+
   .motto {
     margin-top: 200px;
   }
@@ -143,7 +144,6 @@
     margin:  5px 0;
   }
 
-
   .motto h1 {
     font-size: 36px;
   }
@@ -152,7 +152,6 @@
     font-size: 18px;
   }
 }
-
 
 .information-text {
   background-color: #f1f1f1;
@@ -220,7 +219,6 @@
   animation-delay: 1.5s;
 }
 
-
 @keyframes slideIn {
   to {
     opacity: 1;
@@ -232,7 +230,6 @@
   font-size: 3em;
   margin-bottom: 10px;
   text-align: center;
-
 }
 
 .counter-container {
@@ -240,7 +237,6 @@
   gap: 20px;
   padding-top: -200px;
 }
-
 
 .counter-box {
   width: 150px;
@@ -257,12 +253,10 @@
   font-family: Tahoma, serif;
 }
 
-
 .counter-box .header {
   padding: 20px;
   font-size: 18px;
 }
-
 
 .counter-box .circle {
   background-color: #009fe3;
@@ -276,7 +270,6 @@
   font-size: 24px;
   margin: 0 auto;
 }
-
 
 .counter-container .button button {
   background-color: #009fe3;
@@ -300,14 +293,13 @@
 }
 
 .counter-container .button button:active {
-  background-color: mediumblue; /* Dunklere Farbe beim Klick */
+  background-color: mediumblue;
   color: #f0f0f0;
 }
 
-
 .fade {
   padding-bottom: -20px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), #f1f1f1); /* Farbverlauf von dunkel zu transparent */
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), #f1f1f1);
 }
 
 .fadeReversed {
@@ -320,8 +312,6 @@
   max-width: 100%;
   margin: 40px auto 80px;
   padding: 40px;
-
-
 }
 
 .team-gallery h2 {
@@ -334,7 +324,7 @@
 }
 
 .highlight {
-  color: #007bff; /* Blaue Farbe für "Teams" */
+  color: #007bff;
 }
 
 .team-gallery p {
@@ -343,7 +333,6 @@
   margin-bottom: 30px;
 }
 
-/* Galerie-Stil */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -404,12 +393,12 @@
 }
 
 .gallery-Button button:hover {
-  background-color: #75b3f0; /* Etwas hellere Farbe beim Hover */
-  box-shadow: 1px 1px 10px rgba(57, 52, 255); /* Leichtes Aufleuchten */
+  background-color: #75b3f0;
+  box-shadow: 1px 1px 10px rgba(57, 52, 255);
 }
 
 .gallery-Button button:active {
-  background-color: mediumblue; /* Dunklere Farbe beim Klick */
+  background-color: mediumblue;
   color: #f0f0f0;
 }
 
@@ -432,14 +421,13 @@
 
 .news-section {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 Spalten */
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
   max-width: 1200px;
   margin: 50px auto;
 }
 
-/* Stil für einzelne News-Karten */
 .news-card {
   background-color: #f9f9f9;
   border-radius: 8px;
@@ -455,49 +443,43 @@
 }
 
 .news-card img {
-  width: 100%; /* Passt das Bild an die Breite des Karten-Containers an */
-  height: 200px; /* Festgelegte Höhe für die Bilder */
-  object-fit: cover; /* Zuschneiden des Bildes, sodass es den Container vollständig füllt */
-  border-radius: 8px; /* Optional: Rundungen hinzufügen */
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
-/* Inhalt in der News-Karte */
 .news-card-content {
   padding: 15px;
 }
 
-/* Titel der News */
 .news-card h3 {
   font-size: 18px;
   margin: 0;
   color: #333;
 }
 
-/* Beschreibungstext der News */
 .news-card p {
   color: #666;
   font-size: 14px;
   margin-top: 8px;
 }
 
-/* Hover-Effekt für News-Karten */
 .news-card:hover {
   transform: scale(1.03);
 }
 
-/* Responsive Anpassungen */
 @media (max-width: 768px) {
   .news-section {
-    grid-template-columns: repeat(2, 1fr); /* 2 Spalten auf mittleren Bildschirmen */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 480px) {
   .news-section {
-    grid-template-columns: 1fr; /* 1 Spalte auf kleinen Bildschirmen */
+    grid-template-columns: 1fr;
   }
 }
-
 
 .newsletter-popup {
   position: fixed;
@@ -515,7 +497,6 @@
   z-index: 1000;
 }
 
-/* Close-Button */
 .close-btn {
   position: absolute;
   top: 10px;
@@ -526,7 +507,6 @@
   cursor: pointer;
 }
 
-/* Überschrift */
 .newsletter-popup h3 {
   margin: 0;
   font-size: 18px;
@@ -534,14 +514,12 @@
   text-align: center;
 }
 
-/* Beschreibungstext */
 .newsletter-popup p {
   font-size: 14px;
   color: #666;
   text-align: center;
 }
 
-/* Input-Feld */
 .newsletter-popup input[type="email"] {
   width: 100%;
   padding: 10px;
@@ -551,7 +529,6 @@
   font-size: 14px;
 }
 
-/* Abonnieren-Button */
 .subscribe-btn {
   width: 100%;
   padding: 10px;
@@ -563,37 +540,36 @@
   font-size: 16px;
 }
 
-/* Popup ausblenden */
 .hidden {
   display: none;
 }
 
 @media (max-width: 768px) {
   .newsletter-popup {
-    bottom: 80px; /* Popup höher positionieren */
-    width: 80%; /* Breite anpassen, um mehr Platz zu nutzen */
-    right: 5%; /* Zentriert auf der Seite für mobile Geräte */
-    padding: 15px; /* Kleinere Innenabstände für mobile Geräte */
+    bottom: 80px;
+    width: 80%;
+    right: 5%;
+    padding: 15px;
   }
 
   .newsletter-popup h3 {
-    font-size: 16px; /* Kleinere Schriftgröße für mobile Geräte */
+    font-size: 16px;
   }
 
   .newsletter-popup p {
-    font-size: 13px; /* Textgröße für bessere Lesbarkeit anpassen */
+    font-size: 13px;
   }
 
   .newsletter-popup input[type="email"] {
-    font-size: 13px; /* Kleinere Schriftgröße im Eingabefeld */
+    font-size: 13px;
   }
 
   .subscribe-btn {
-    font-size: 14px; /* Kleinere Schriftgröße für den Button */
+    font-size: 14px;
   }
 
   .close-btn {
-    top: 5px; /* Button oben etwas enger platzieren */
+    top: 5px;
     right: 5px;
     font-size: 16px;
   }
@@ -644,7 +620,6 @@
   background-color: #75b3f0;
 }
 
-/* Stil für das Formular im Banner */
 .banner-form {
   max-width: 400px;
   background: rgba(255, 255, 255, 0.9);
@@ -691,7 +666,6 @@
   background-color: #75b3f0;
 }
 
-/* Stil für den Begrüßungstext unterhalb des Banners */
 .greeting-text {
   padding: 20px;
   background-color: #f9f9f9;
@@ -709,12 +683,10 @@
   text-decoration: none;
 }
 
-/* Media Query for Mobile Devices */
 @media (max-width: 768px) {
   .navbar ul li {
     display: block;
     margin: 20px 0;
-
   }
 
   .navbar-right button {
@@ -766,24 +738,7 @@
   margin-top: 20px;
 }
 .navbar-right {
-  display: flex; /* Aktiviert Flexbox /
-  gap: 10px; / Abstand zwischen den Buttons /
-  align-items: center; / Vertikale Ausrichtung der Buttons /
-}
-
-.navbar-right button {
-  background-color: dodgerblue;
-  border: none;
-  color: aliceblue;
-  padding: 15px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: 0.3s ease;
-  margin: 0; / Entfernt den Margin, damit die Buttons direkt nebeneinander sind */
+  display: flex;
 }
 
 .navbar-right button:hover {
