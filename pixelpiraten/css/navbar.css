@@ -1,11 +1,10 @@
-/* Navigation */
 .navbar {
   width: 100%;
   margin: auto;
   padding: 22px 0;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Bild links, Navigation zentriert */
+  justify-content: space-between;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/img.png");
   background-size: cover;
   background-position: center;
@@ -16,7 +15,7 @@
   height: 140px;
   width: auto;
   cursor: pointer;
-  margin-left: 30px; /* Optional: Abstand zum linken Rand */
+  margin-left: 30px;
 }
 
 .navbar-middle {
@@ -41,7 +40,6 @@
   font-size: large;
 }
 
-/* Hover-Effekt für die Links */
 .navbar-middle ul li::after {
   content: '';
   height: 3px;
@@ -56,7 +54,6 @@
 .navbar-middle ul li:hover::after {
   width: 100%;
 }
-
 
 .navbar-right button:hover {
   background-color: #75b3f0;
