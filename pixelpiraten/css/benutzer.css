@@ -21,12 +21,12 @@
   margin-right: 5px;
 }
 .user-actions button:hover {
-  background-color: #75b3f0; /* Etwas hellere Farbe beim Hover */
-  box-shadow: 1px 1px 10px rgba(57, 52, 255); /* Leichtes Aufleuchten */
+  background-color: #75b3f0;
+  box-shadow: 1px 1px 10px rgba(57, 52, 255);
 }
 
 .user-actions button:active {
-  background-color: mediumblue; /* Dunklere Farbe beim Klick */
+  background-color: mediumblue;
   color: #f0f0f0;
 }
 .user-actions a{

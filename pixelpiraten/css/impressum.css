@@ -1,4 +1,4 @@
-/* Allgemeines Layout */
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -15,7 +15,7 @@ h1 {
   margin-top: 20px;
 }
 
-/* Impressum Inhalt */
+
 main.impressum {
   max-width: 800px;
   margin: 40px auto;
@@ -40,7 +40,6 @@ strong {
   color: #333;
 }
 
-/* Footer Styles */
 .footer {
   background-color: #222;
   color: #ddd;
@@ -75,7 +74,6 @@ strong {
   text-decoration: none;
   font-size: 0.9em;
 }
-
 .footer-section a:hover {
   color: #fff;
   text-decoration: underline;

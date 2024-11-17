@@ -103,18 +103,17 @@
 }
 
 .navbar-right button:hover {
-  background-color: #75b3f0; /* Etwas hellere Farbe beim Hover */
-  box-shadow: 1px 1px 10px rgba(57, 52, 255); /* Leichtes Aufleuchten */
+  background-color: #75b3f0;
+  box-shadow: 1px 1px 10px rgba(57, 52, 255);
 }
 
 .navbar-right button:active {
-  background-color: mediumblue; /* Dunklere Farbe beim Klick */
+  background-color: mediumblue;
   color: #f0f0f0;
 }
 
 
 @media (max-width: 768px) {
-  /* Navigation wird vertikal ausgerichtet */
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -128,28 +127,23 @@
   .navbar ul li a{
     padding-left: 15px;
   }
-
-  /* Motto zentrieren und sicherstellen, dass es nicht von den Buttons überlappt wird */
   .motto {
     margin-top: 200px;
   }
 
-  /* Navbar-Rechts-Buttons nach unten verschieben und zentrieren */
   .navbar-right {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap:  15px;
-    /* Abstand zum Hauptteil der Navigation */
   }
 
-  /* Anpassung der Button-Größe und Margin für Mobilgeräte */
   .navbar-right button {
-    width: 80%; /* Breite anpassen für besseren Look auf Mobilgeräten */
-    margin:  5px 0; /* Gleichmäßiger Abstand zwischen den Buttons */
+    width: 80%;
+    margin:  5px 0;
   }
 
-  /* Optional: Textgröße anpassen */
+
   .motto h1 {
     font-size: 36px;
   }
@@ -160,7 +154,6 @@
 }
 
 
-/* Styling für die Boxen */
 .information-text {
   background-color: #f1f1f1;
   padding-top: 120px;
@@ -192,8 +185,8 @@
   margin-top: 10px;
   margin-right: 100px;
   margin-bottom: 8em;
-  opacity: 0; /* Startet transparent */
-  transform: translateX(-100%); /* Startet links außerhalb des Bildschirms */
+  opacity: 0;
+  transform: translateX(-100%);
   animation: slideIn 1s ease forwards;
   justify-content: center;
 }
@@ -215,8 +208,6 @@
   animation-delay: 1.5s;
 }
 
-/* Verzögerung für die Animation */
-
 .counter-box:nth-child(2) {
   animation-delay: 1.5s;
 }
@@ -229,11 +220,11 @@
   animation-delay: 1.5s;
 }
 
-/* Keyframes für die Einfluganimation */
+
 @keyframes slideIn {
   to {
-    opacity: 1; /* Vollständig sichtbar */
-    transform: translateX(0); /* An der Zielposition */
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -246,11 +237,11 @@
 
 .counter-container {
   display: flex;
-  gap: 20px; /* Abstand zwischen den Boxen */
+  gap: 20px;
   padding-top: -200px;
 }
 
-/* Einzelne Box */
+
 .counter-box {
   width: 150px;
   text-align: center;
@@ -266,13 +257,13 @@
   font-family: Tahoma, serif;
 }
 
-/* Header Bereich */
+
 .counter-box .header {
   padding: 20px;
   font-size: 18px;
 }
 
-/* Kreis mit der Zahl */
+
 .counter-box .circle {
   background-color: #009fe3;
   color: white;
@@ -286,7 +277,7 @@
   margin: 0 auto;
 }
 
-/* Button für "Mehr" */
+
 .counter-container .button button {
   background-color: #009fe3;
   color: white;
@@ -304,8 +295,8 @@
 }
 
 .counter-container .button button:hover {
-  background-color: #75b3f0; /* Etwas hellere Farbe beim Hover */
-  box-shadow: 1px 1px 10px rgba(57, 52, 255); /* Leichtes Aufleuchten */
+  background-color: #75b3f0;
+  box-shadow: 1px 1px 10px rgba(57, 52, 255);
 }
 
 .counter-container .button button:active {
